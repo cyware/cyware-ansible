@@ -1,0 +1,18 @@
+cyware_repo:
+  apt: 'deb https://packages-dev.cyware.khulnasoft.com/pre-release/apt/ unstable main'
+  yum: 'https://packages-dev.cyware.khulnasoft.com/pre-release/yum/'
+  gpg: 'https://packages-dev.cyware.khulnasoft.com/key/GPG-KEY-CYWARE'
+  key_id: '0DCFCA5547B19D2A6099506096B3EE5F29111145'
+cyware_winagent_config_url: "https://packages-dev.cyware.khulnasoft.com/pre-release/windows/cyware-agent-{{ cyware_agent_version }}-1.msi"
+cyware_winagent_package_name: "cyware-agent-{{ cyware_agent_version }}-1.msi"
+cyware_winagent_sha512_url: "https://packages-dev.cyware.khulnasoft.com/pre-release/checksums/cyware/{{ cyware_agent_version }}/cyware-agent-{{ cyware_agent_version }}-1.msi.sha512"
+
+cyware_macos_intel_package_name: "cyware-agent-{{ cyware_agent_version }}-1.intel64.pkg"
+cyware_macos_arm_package_name: "cyware-agent-{{ cyware_agent_version }}-1.arm64.pkg"
+cyware_macos_intel_package_url: "https://packages-dev.cyware.khulnasoft.com/staging/pre-release/{{ cyware_macos_intel_package_name }}"
+cyware_macos_arm_package_url: "https://packages-dev.cyware.khulnasoft.com/pre-release/macos/{{ cyware_macos_arm_package_name }}"
+
+certs_gen_tool_version: 4.8
+
+# Url of certificates generator tool
+certs_gen_tool_url: "https://packages-dev.cyware.khulnasoft.com/{{ certs_gen_tool_version }}/cyware-certs-tool.sh"

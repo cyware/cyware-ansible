@@ -1,0 +1,16 @@
+---
+- hosts: <your cyware agents hosts>
+  become: yes
+  become_user: root
+  roles:
+    - ../roles/cyware/ansible-cyware-agent
+  vars:
+    cyware_managers:
+      - address: <your manager IP>
+        port: 1514
+        protocol: tcp
+        api_port: 55000
+        api_proto: 'https'
+        api_user: cyware
+        max_retries: 5
+        retry_interval: 5

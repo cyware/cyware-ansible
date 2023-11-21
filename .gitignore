@@ -1,0 +1,13 @@
+*.retry
+cyware-agent.yml
+cyware-elastic_stack-distributed.yml
+cyware-elastic_stack-single.yml
+cyware-elastic.yml
+cyware-kibana.yml
+cyware-manager.yml
+*.pyc
+.mypy_cache
+Pipfile.lock
+*.swp
+molecule/**/es_certs/
+molecule/**/opendistro/
